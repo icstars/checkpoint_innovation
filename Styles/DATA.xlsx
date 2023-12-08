@@ -1,0 +1,11 @@
+SELECT TOP (1000) [Serial_Number]
+      ,[Location]
+      ,[ToolID]
+      ,[Tool_type]
+      ,[Mold_type]
+      ,[Availablity]
+      ,[Date_Created]
+      ,[Date_Scraped]
+      ,[Manufacture]
+  FROM [Amsted].[dbo].[DATA]
+  
