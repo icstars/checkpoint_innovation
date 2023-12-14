@@ -3,139 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Document</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #006f75;
-            color: #fff;
-            text-align: center;
-            padding-top: 100px;
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        #pinContainer {
+        body {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
+            align-items: center;
+            height: 100vh;
+            background-color: #ebe8e8;
+            font-family: Arial, sans-serif;
+            position: relative;
         }
-
-        .pinBox {
-            width: 40px;
-            height: 40px;
-            font-size: 18px;
+        .main {
+            position: relative;
+            z-index: 1;
+         }
+         .pin-input input {
+            width: 3rem;
+            height: 3rem;
+            margin: 0 0.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 80%; /* Change to make the inputs circular */
+            outline: none;
+}
+        .pin-text {
+            text-align: center;
+            margin-top: 10px; /* Adjust as needed */
+            color: #555; /* Adjust the color */
+            font-size: 1rem; /* Adjust the font size */
+        }
+        .pin-input input:focus {
+            border-color: #006f75; /* Change color on focus */
+        } 
+        .pin-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: calc(50% - 90px); /* Adjust top position */
+            z-index: 999;
+            color: #fff;
             text-align: center;
         }
-
-        #loginBtn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #fff;
-            color: #006f75;
+        .message {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #fff;
         }
-    </style>
+ 
+         * {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+      }
+      .main {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+      }
+      .d1 {
+        position: absolute;
+        background-image: url('Blackandwhite.jpg');
+        background-size: 2700px 1500px;
+     
+        height: 30vh;
+        width: 15vw;
+     
+        background-position: 0 50%;
+     
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        animation: dd1 10s 1, dd12 10s 1;
+        animation-delay: 4s, 14s;
+      }
+      .d2 {
+        position: absolute;
+        background-image: url('Blackandwhite.jpg');
+        background-size: 2700px 1500px;
+     
+        height: 50vh;
+        width: 25vw;
+     
+        background-position: -10vw 50%;
+        left: 10vw;
+     
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        animation: dd2 10s 2;
+        animation-delay: 4s;
+      }
+      .d3 {
+        position: absolute;
+        background-image: url('Blackandwhite.jpg');
+        background-size: 2700px 1500px;
+        overflow: hidden;
+     
+        height: 100vh;
+        width: 40vw;
+        left: 25vw;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+        background-position: -35vw 50%;
+     
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        animation: dd3 10s 2;
+        animation-delay: 4s;
+      }
+      .d4 {
+        position: absolute;
+        overflow: hidden;
+        background-image: url('Blackandwhite.jpg');
+        background-size: 2700px 1500px;
+     
+        height: 80vh;
+        width: 25vw;
+        left: 60vw;
+        background-position: -70vw 50%;
+     
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        animation: dd4 10s 2;
+        animation-delay: 4s;
+      }
+      .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 130px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 9999;
+        }
+     
+      @keyframes dd1 {
+        0% {
+        }
+        50% {
+          width: 95vw;
+        }
+      }
+      @keyframes dd12 {
+        0% {
+        }
+        50% {
+          background-position: Calc(0vw - 40px) 50%;
+        }
+      }
+      @keyframes dd2 {
+        0% {
+        }
+        50% {
+          background-position: Calc(-10vw - 40px) 50%;
+        }
+      }
+      @keyframes dd3 {
+        0% {
+        }
+        50% {
+          background-position: Calc(-35vw - 40px) 50%;
+        }
+      }
+      @keyframes dd4 {
+        0% {
+        }
+        50% {
+          background-position: Calc(-70vw - 40px) 50%;
+        }
+      }
+      </style>
 </head>
 <body>
-    <img src="images.png" width="200" height="60">
-    <h2></h2>
 
-    <!-- Your login form goes here -->
-    <form>
-        <h2>Enter 4 Digit Pin</h2>
-        <div id="pinContainer">
-            <input class="pinBox" type="number" maxlength="1" id="pin1" oninput="focusNext(this, 'pin2')">
-            <input class="pinBox" type="number" maxlength="1" id="pin2" oninput="focusNext(this, 'pin3')">
-            <input class="pinBox" type="number" maxlength="1" id="pin3" oninput="focusNext(this, 'pin4')">
-            <input class="pinBox" type="number" maxlength="1" id="pin4" oninput="focusNext(this, 'loginBtn')">
+    <img src='AmstedLogo.jpg' alt="Amsted Logo" class="logo">
+
+    <div class="main">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+    </div>
+    <div class="pin-container">
+        <div class="pin-input">
+            <input type="text" maxlength="1" id="pin1" onkeyup="focusNext(this, 'pin2')" />
+            <input type="text" maxlength="1" id="pin2" onkeyup="focusNext(this, 'pin3')" />
+            <input type="text" maxlength="1" id="pin3" onkeyup="focusNext(this, 'pin4')" />
+            <input type="text" maxlength="1" id="pin4" onkeyup="checkPin()" />
         </div>
-        <button id="loginBtn" type="button" onclick="checkPin()">Login</button>
-    </form>
-
+        <p class="pin-text">Please Input Your 4-digit Plant Pin</p>
+    </div>
     <script>
         function focusNext(current, nextFieldId) {
             var maxLength = parseInt(current.getAttribute('maxlength'));
             var currentValue = current.value;
-
+ 
             if (currentValue.length === maxLength) {
                 // Focus on the next input field or button
                 document.getElementById(nextFieldId).focus();
             }
         }
-
+ 
         function checkPin() {
             var pin1 = document.getElementById('pin1').value;
             var pin2 = document.getElementById('pin2').value;
             var pin3 = document.getElementById('pin3').value;
             var pin4 = document.getElementById('pin4').value;
-
+ 
             var enteredPin = pin1 + pin2 + pin3 + pin4;
-
+ 
             // Check against administrator PIN
             if (enteredPin === '1234') {
                 // Redirect to the admindashboard.html page
                 window.location.href = 'admindashboard.html';
-            } 
+            }
             // Check against operator PIN
             else if (enteredPin === '9876') {
                 // Redirect to the operatorpage.html page
                 window.location.href = 'oppdashCOLUM.html';
-            } 
-
+            }
+ 
             if (enteredPin === '1234') {
                 // Redirect to the admindashboard.html page
                 window.location.href = 'admindashboard.html';
-            } 
+            }
             // Check against operator PIN
             else if (enteredPin === '5678') {
                 // Redirect to the operatorpage.html page
                 window.location.href = 'operatordashboard.html';
             }
-
-
+ 
+ 
             if (enteredPin === '1234') {
                 // Redirect to the admindashboard.html page
                 window.location.href = 'admindashboard.html';
-            } 
+            }
             // Check against operator PIN
             else if (enteredPin === '2424') {
                 // Redirect to the operatorpage.html page
                 window.location.href = 'oppdashKC.html';
-            } 
-
-
-
+            }
+ 
+ 
+ 
             if (enteredPin === '1234') {
                 // Redirect to the admindashboard.html page
                 window.location.href = 'admindashboard.html';
-            } 
+            }
             // Check against operator PIN
             else if (enteredPin === '8082') {
                 // Redirect to the operatorpage.html page
                 window.location.href = 'oppdashKEO.html';
-            } 
-
+            }
+ 
             if (enteredPin === '1234') {
                 // Redirect to the admindashboard.html page
                 window.location.href = 'admindashboard.html';
-            } 
+            }
             // Check against operator PIN
             else if (enteredPin === '3116') {
                 // Redirect to the operatorpage.html page
                 window.location.href = 'oppdashWINN.html';
-            } 
-
-
-
-
-            // Incorrect PIN
-            else {
-                alert('Incorrect PIN. Please try again.');
-                // You may want to clear the input fields or take other actions on an incorrect PIN
             }
+ 
+ 
+ 
+ 
+            // Incorrect PIN
+           
         }
-    </script>
+        </script>
 
 </body>
 </html>

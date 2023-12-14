@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Columbus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+    <body>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="C:\Users\ICSKC12\.vscode\gitHub\index.html">
+            <img src="AmstedLogo.jpg" width="112" height="28">
+     
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+     
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="Operatordashboard.html">
+              Home
+            </a>
+            <a class="navbar-item" href="Operatortoolview.html">
+              View a Tool
+            </a>
+            <a class="navbar-item" href="Checkoutpage.html">
+              Checkout Tool
+            </a>
+     
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Locations
+              </a>
+     
+              <div class="navbar-dropdown">
+              
+                <a class="navbar-item" href="OppdashCOLUM.html">
+                  Columbus
+                </a>
+              
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+     
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <div class="navbar-link">
+                    Language
+                  </div>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/us.svg" alt="English">
+                      English
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/es.svg" alt="Spanish">
+                      Spanish
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/nl.svg" alt="Dutch">
+                      Dutch
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/de.svg" alt="German">
+                      German
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/fr.svg" alt="French">
+                      French
+                    </a>
+                    <a class="navbar-item">
+                      <img class="flag-icon" src="https://cdn.jsdelivr.net/gh/lipis/flag-icon-css@3.5.0/flags/4x3/cn.svg" alt="Chinese">
+                      Chinese
+                    </a>
+                  </div>
+    </div>
+</div>
+</div>
+ 
+<div class="topnav">
+   
+    <input type="text" placeholder="Search..">
+    <a class="button is-light" href="Loginpage.html">Log Out</a>
+     </div>
+      </nav>
+    </div>
+  </nav>
+  <section class="section">
+    <table class="table">
+      <thead>
+        <tr>
+          <th><abbr title="Serial Number">Status</abbr></th>
+          <th>Location</th>
+          <th><abbr title="Tool ID">Tool ID</abbr></th>
+          <th><abbr title="Tool Type">Tool Type</abbr></th>
+          <th><abbr title="Created Date">Created Date</abbr></th>
+          <th><abbr title="Scrap Date">Last Sharpened</abbr></th>
+          <th><abbr title="Graphite Block ID">Graphite Block ID</abbr></th>
+          <th><abbr title="History">Date/Time</abbr></th>
+         </tr>
+      </thead>
+      <tfoot>
+       
+      </tfoot>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td><a>Columbus</a>
+          </td>
+          <td>A123</td>
+          <td>28</td>
+          <td>12-14-2023</td>
+          <td>12-14-2023</td>
+          <td>68</td>
+          <td>10:30AM 12-14-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+        </tr>
+        <tr>
+          <th>24</th>
+          <td><a>Columbus</a>
+          <td>A693</td>
+          <td>24</td>
+          <td>10-22-2023</td>
+          <td>12-2-2023</td>
+          <td>65</td>
+          <td>3:30 PM 12-8-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td><a>Columbus</a>
+          <td>A987</td>
+          <td>32</td>
+          <td>12-5-2023</td>
+          <td>12-11-2023</td>
+          <td>69</td>
+          <td>2:16 PM 12-14-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+        </tr>
+        <tr class="is-selected">
+          <th>10</th>
+          <td><a>Columbus</a>
+          <td>A124</td>
+          <td>24</td>
+          <td>11-6-2023</td>
+          <td>12-8-2023</td>
+          <td>71</td>
+          <td>9:30 AM 12-5-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td><a>Columbus</a>
+          <td>A345</td>
+          <td>32</td>
+          <td>11-2-2023</td>
+          <td>12-1-2023</td>
+          <td>49</td>
+          <td>5:34 PM 12-7-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+        </tr>
+        <tr>
+          <th>17</th>
+          <td><a>Columbus</a>
+          <td>A789</td>
+          <td>24</td>
+          <td>9-23-2023</td>
+          <td>11-31-2023</td>
+          <td>59</td>
+          <td>12:30 PM 12-8-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td><a>Columbus</a>
+          <td>A374</td>
+          <td>32</td>
+          <td>11-15-2023</td>
+          <td>12-4-2023</td>
+          <td>65</td>
+          <td>1:23 PM 12-12-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td><a>Columbus</a>
+          <td>A975</td>
+          <td>32</td>
+          <td>9-17-2023</td>
+          <td>12-1-2023</td>
+          <td>63</td>
+          <td>9:15 PM 12-4-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>18</th>
+          <td><a>Columbus</a>
+          <td>A103</td>
+          <td>32</td>
+          <td>9-30-2023</td>
+          <td>12-8-2023</td>
+          <td>41</td>
+          <td>6:30 AM 12-3-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>29</th>
+          <td><a>Columbus</a>
+          <td>A119</td>
+          <td>24</td>
+          <td>11-1-2023</td>
+          <td>12-6-2023</td>
+          <td>59</td>
+          <td>3:30 PM 12-7-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td><a>Columbus</a>
+          <td>A125</td>
+          <td>32</td>
+          <td>11-28-2023</td>
+          <td>12-4-2023</td>
+          <td>59</td>
+          <td>8:20 PM 12-6-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>32</th>
+          <td><a>Columbus</a>
+          <td>A642</td>
+          <td>24</td>
+          <td>9-1-2023</td>
+          <td>11-6-2023</td>
+          <td>42</td>
+          <td>7:21 PM 12-3-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td><a>Columbus</a>
+          <td>A657</td>
+          <td>24</td>
+          <td>12-5-2023</td>
+          <td>12-11-2023</td>
+          <td>40</td>
+          <td>3:30 PM 12-5-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>14</th>
+          <td><a>Columbus</a>
+          <td>A398</td>
+          <td>24</td>
+          <td>10-10-2023</td>
+          <td>11-28-2023</td>
+          <td>34</td>
+          <td>3:30 PM 12-2-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>21</th>
+          <td><a>Columbus</a>
+          <td>A275</td>
+          <td>24</td>
+          <td>9</td>
+          <td>18</td>
+          <td>39</td>
+          <td>3:30 PM 12-1-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td><a>Columbus</a>
+          <td>A469</td>
+          <td>32</td>
+          <td>9</td>
+          <td>18</td>
+          <td>45</td>
+          <td>5:28 PM 12-3-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td><a>Columbus</a>
+          <td>A387</td>
+          <td>9</td>
+          <td>12</td>
+          <td>17</td>
+          <td>48</td>
+          <td>4:18 PM 12-11-23</td>
+         
+          <td>  
+            <div class="buttons are-small">
+              <button class="button is-primary">Use</button>
+              <button class="button is-danger">Dull</button><label class="checkbox">
+                <input type="checkbox" onchange="handleCheckboxChange()">
+              </label>
+            </div>
+       
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>34</th>
+          <td><a>Columbus</a>
+          </td>
+          <td>A194</td>
+          <td>9</td>
+          <td>10</td>
+          <td>19</td>
+          <td>44</td>
+          <td>3:30 PM on December 14, 23</td>
+         
+        </tr>
+        <tr>
+          <th>1</th>
+          <td><a>Columbus</a>
+          </td>
+          <td>A284</td>
+          <td>9</td>
+          <td>7</td>
+          <td>22</td>
+          <td>39</td>
+          <td>3:30 PM on December 14, 2023</td>
+         
+         
+        <tr>
+          <th>30</th>
+          <td><a>Columbus</a>
+          </td>
+          <td>A316</td>
+          <td>3</td>
+          <td>8</td>
+          <td>27</td>
+          <td>27</td>
+          <td>3:30 PM on December 14, 2023</td>
+         
+         
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  </body>
+</html>
